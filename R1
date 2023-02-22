@@ -1,0 +1,57 @@
+a<-10
+b<-20
+c<-a+b
+print(paste("Addition of",a,"and",b,"is:",c))
+
+
+a<-readline(prompt = "Enter First No.")
+b<-readline(prompt = "Enter Second No.")
+a<-as.integer(a)
+b<-as.integer(b)
+c<-a+b
+print(paste("Addition of",a,"and",b,"is:",c))
+
+
+x<-c(50,40)
+print(paste("Addition of",x[1],"and",x[2],"is:",sum(x)))
+
+#Experiment 1:Write a R program to take input from the user (name and age) and display the values. Also print the version of R installation.
+name<-readline(prompt = "Enter a name:")
+age<-readline(prompt = "Enter age:")
+age<-as.integer(age)
+print(paste("Name:",name,"and","Age:",age))
+
+print(R.version.string)
+
+
+#Experiment 2:Write a R program to get the details of the objects in memory
+name<-"karthik"
+a<-10.5
+b<-4
+nums<-c(10,20,30,40,50)
+print(ls())
+print("Details of Objects in Memory:")
+print(ls.str())
+
+
+#Experiment 3:Write a R program to create a sequence of numbers from 20 to 50 and find the mean of numbers from 20 to 60 and sum of numbers from 51 to 91.
+print("Sequence of numbers from 20 to 50:")
+print(seq(20,50))
+print("Mean of numbers from 20 to 60:")
+print(mean(20:60))
+print("sum of numbers from 51 to 91")
+print(sum(51:91))
+
+
+#Experiment 4:Write a R program to create a simple bar plot of five subjects marks.
+marks=c(100,99,98,96,97)
+barplot(marks,
+        main = "Comparing Marks of 5 Subjects",
+        xlab = "Subjects",
+        ylab = "Marks",
+        names.arg = c("CPP","OS","PYTHON","NMVC","SE"),
+        col = "skyblue",
+        horiz= FALSE)
+
+
+#Experiment 4:
