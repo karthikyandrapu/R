@@ -251,3 +251,13 @@ print(a)
 
 
 #Experiment11: Write a R program to create an empty data frame.
+df = data.frame(Ints=integer(),
+                Doubles=double(),
+                Characters=character(),
+                Logicals=logical(),
+                Factors=factor(),
+                stringsAsFactors=FALSE)
+print("Structure of the empty dataframe:")
+print(str(df))
+
+#Experiment12: Write a R program to create a data frame from four given vectors.
