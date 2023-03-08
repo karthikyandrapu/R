@@ -261,3 +261,35 @@ print("Structure of the empty dataframe:")
 print(str(df))
 
 #Experiment12: Write a R program to create a data frame from four given vectors.
+
+
+#Experiment13: Write a R program to create a data frame using two given vectors and display the duplicated elements and unique rows of the said data frame. 
+a = c(10,20,10,10,40,50,20,30)
+b = c(10,30,10,20,0,50,30,30)
+print("Original data frame:")
+ab = data.frame(a,b)
+print(ab)
+print("Duplicate elements of the said data frame:")
+print(duplicated(ab))
+print("Unique rows of the said data frame:")
+print(unique(ab))
+
+#Experiment14: Write a R program to save the information of a data frame in a file and display the information of the file.
+exam_data = data.frame(
+  name = c('karthik','arun','kotesh','ajith','raghavendra','lokesh'),
+  score = c(12.5, 9, 16.5, 12, 18, 20),
+  attempts = c(2, 3, 2, 3, 2, 3),
+  qualify = c('yes', 'no', 'yes', 'no', 'yes', 'yes')
+)
+print("Original dataframe:")
+print(exam_data)
+save(exam_data,file="data.rda")
+load("data.rda")
+file.info("data.rda") 
+
+
+#Experiment15: Write a R program to create a matrix from a list of given vectors.
+
+
+
+#Experiment16: Write a R program to concatenate two given matrices of same column but different rows.
