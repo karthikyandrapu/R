@@ -260,7 +260,19 @@ df = data.frame(Ints=integer(),
 print("Structure of the empty dataframe:")
 print(str(df))
 
+
 #Experiment12: Write a R program to create a data frame from four given vectors.
+name <- c('karthik','arun','kotesh','lokesh','raghavendra','ajith')
+score <- c(14,12.5,16.5,13,14.5,13.5)
+attempts <- c(2, 3, 2, 1, 2, 3)
+qualify <- c('yes', 'yes', 'yes', 'yes', 'yes', 'yes')
+print("Data frame:")
+print(name)
+print(score)
+print(attempts)
+print(qualify)
+df = data.frame(name, score, attempts, qualify)
+print(df)
 
 
 #Experiment13: Write a R program to create a data frame using two given vectors and display the duplicated elements and unique rows of the said data frame. 
@@ -274,12 +286,13 @@ print(duplicated(ab))
 print("Unique rows of the said data frame:")
 print(unique(ab))
 
+
 #Experiment14: Write a R program to save the information of a data frame in a file and display the information of the file.
 exam_data = data.frame(
-  name = c('karthik','arun','kotesh','ajith','raghavendra','lokesh'),
-  score = c(12.5, 9, 16.5, 12, 18, 20),
-  attempts = c(2, 3, 2, 3, 2, 3),
-  qualify = c('yes', 'no', 'yes', 'no', 'yes', 'yes')
+    name = c('karthik','arun','kotesh','lokesh','raghavendra','ajith'),
+    score = c(14,12.5,16.5,13,14.5,13.5),
+    attempts = c(2, 3, 2, 1, 2, 3),
+    qualify = c('yes', 'yes', 'yes', 'yes', 'yes', 'yes')
 )
 print("Original dataframe:")
 print(exam_data)
