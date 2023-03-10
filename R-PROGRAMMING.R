@@ -302,7 +302,49 @@ file.info("data.rda")
 
 
 #Experiment15: Write a R program to create a matrix from a list of given vectors.
-
+exam_data = data.frame(
+  name = c('karthik','arun','kotesh','lokesh','raghavendra','ajith'),
+  score = c(14,12.5,16.5,13,14.5,13.5),
+  attempts = c(2, 3, 2, 1, 2, 3),
+  qualify = c('yes', 'yes', 'yes', 'yes', 'yes', 'yes')
+)
+print("Original dataframe:")
+print(exam_data)
+new_list = split(exam_data, seq(nrow(exam_data)))
+print("Dataframe rows to a list:")
+print(new_list)
 
 
 #Experiment16: Write a R program to concatenate two given matrices of same column but different rows.
+x = matrix(1:12, ncol=3)
+y = matrix(13:24, ncol=3)
+print("Matrix 1")
+print(x)
+print("Matrix 2")
+print(y)
+result = dim(rbind(x,y))
+print("After Concatenating two given matrices:")
+print(result)
+
+
+#Experiment17: Write a R program to find row and column index of maximum and minimum value in a given matrix.
+m = matrix(c(1:16), nrow = 4, byrow = TRUE)
+print("Original Matrix:")
+print(m)
+result = which(m == max(m), arr.ind=TRUE)
+print("Row and Column of Maximum value of the said matrix:")
+print(result)
+result = which(m == min(m), arr.ind=TRUE)
+print("Row and Column of Minimum value of the said matrix:")
+print(result)
+
+
+#Experiment18: Write a R program to multiply two vectors of integers type and length 3.
+x = c(10, 20, 30)
+y = c(20, 10, 40)
+print("Original Vectors:")
+print(x)
+print(y)
+print("Product of two Vectors:")
+z = x * y
+print(z)
